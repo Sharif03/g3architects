@@ -1,4 +1,60 @@
+
+
+/* shared styles */
 *{
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
+}
+
+/* header styles */
+header {
+    /* border: 2px solid black; */
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;  
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313
+}
+nav > ul{
+    display: flex;
+    text-decoration: none;
+}
+nav li{
+    list-style: none ;
+    margin-right: 39px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+nav li a{
+    text-decoration: none;
+    color: #424242
+}
+
+
+/* banner styles */
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+.banner-content{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner-description{
+    font-weight: 400px;
+    color: #727272;
+}
+
+img{
+    width: 100%;
 }
