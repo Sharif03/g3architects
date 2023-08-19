@@ -108,6 +108,45 @@ main{
     font-weight: 700;
 }
 
+/* features section style */
+.feature-container{
+    display: flex;
+    margin-top: 130px;
+    gap: 100px;
+}
+.feature-container .feature-card{
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.feature-container .section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.ten-years-badge{
+    color: #FFF;
+    width: 300px;
+    padding: 40px;
+    border-radius: 8px;
+    background: #FF900E;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+.feature-img{
+    height: 90%;
+    margin-left: 90px;
+}
+.ten-years-badge h2{
+    font-size: 4rem;
+    margin-top: 0;
+}
+.ten-years-badge p{
+    font-size: 1.5rem;
+}
+
 /* facts section styles */
 .facts-card-container{
     display: flex;
@@ -150,21 +189,42 @@ main{
 
 }
 
+/* footer section styles */
+footer{
+    color:#424242;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+
 /* Responsive media queries */
 /* Mobile devices */
 @media screen and (max-width: 576px){
     header{
         padding: 20px;
     }
-    nav, .teams-container, .facts-card-container, .sponsors-img-container{
+    nav, 
+    .teams-container, 
+    .facts-card-container, 
+    .sponsors-img-container, 
+    .feature-container{
         flex-direction: column;
     }
+
     .teams-img-container{
         grid-template-columns: repeat(1, 1fr);
     }
     .teams-content, .facts-card-container{
         padding-left: 1.25rem;
         padding-right: 1.25rem;
+    }
+    .feature-img{
+        height: 100%;
+        margin-left: 0px;
+    }
+    .ten-years-badge{
+        position: static;
+        max-width:300px;
     }
     .sponsors-img-container img{
         width: 165px;
@@ -175,7 +235,11 @@ main{
     header{
         padding: 50px;
     }
-    nav, .teams-container, .facts-card-container, .sponsors-img-container{
+    nav, 
+    .teams-container, 
+    .facts-card-container, 
+    .sponsors-img-container,
+    .feature-container{
         flex-direction: column;
     }   
 }
